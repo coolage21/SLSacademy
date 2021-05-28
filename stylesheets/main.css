@@ -1,0 +1,349 @@
+/*01 main-visual*/
+.main-visual {
+    height: 785px;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+.main-visual h2 {}
+.main-visual .main-visual-img {
+    width: 100vw;
+}
+.main-visual .main-visual-img img {
+    width: inherit;
+
+}
+.main-visual:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.main-visual .main-visual-container {
+    width: 1375px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+}
+
+.main-visual-container > p {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: white;
+    flex: 1;
+    margin-right: 90px;
+    line-height: 1.8em;
+}
+.main-visual-container > p > span {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    border-top: 2px solid white;
+    margin-top: 30px;
+    padding-top: 30px;
+    font-style: normal;
+    color: var(--color-yellow);
+}
+
+/*수강료 조회*/
+.main-visual form {
+    width: 720px;
+    background-color: white;
+    padding: 30px;
+}
+.main-visual form .form-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.main-visual form .form-header img{
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+.main-visual form .form-main{
+    width: 100%;
+    height: 410px;
+    background-color: var(--color-lightgray);
+    border: 1px solid var(--color-gray);
+    padding: 30px;
+}
+.form-main > .form-text > div {
+    display: flex;
+    margin-bottom: 5px;
+}
+.form-main > .form-text > div > label,
+.form-main > .form-text > div > input[type=text] {
+    border: 1px solid var(--color-gray);
+    background-color: white;
+    padding: 18px 0
+}
+.form-main > .form-text  label {
+    font-weight: 700;
+    width: 140px;
+    text-align: center;
+}
+.form-main > .form-text > div > input[type=text] {
+    flex: 1;
+    padding-left: 20px;
+}
+.form-main button {
+    width: 210px;
+    height: 55px;
+    background-color: var(--color-red);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    float: right;
+}
+
+/*02 quick-menu*/
+.quick-menu {
+    padding: 130px 0;
+}
+.quick-menu-container {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.quick-menu-container a {
+    display: block;
+    width: 155px;
+}
+.quick-menu-container a div {
+    width: inherit;
+    height: 155px;
+    border-radius: 50%;
+    background-color: var(--color-lightgray);
+    position: relative;
+}
+.quick-menu-container a div img {
+    width: 75px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.quick-menu-container a div:hover img{
+
+}
+.quick-menu-container a p {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/*03 notice*/
+.notice {
+    background-color: var(--color-main);
+    padding: 130px 0;
+}
+.notice-container {
+    width: 1170px;
+    margin: auto;
+}
+.notice-container .notice-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.notice-container .notice-title img{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.notice-container .notice-title h2 {
+    color: white;
+}
+.notice-content-wrap {
+    display: flex;
+}
+.notice-content-wrap > .notice-content {
+    width: 570px;
+    background-color: white;
+    padding: 40px;
+    position: relative;
+}
+.notice-content-wrap > .notice-content:nth-child(1) {
+    margin-right: 25px;
+    
+}
+/*소제목*/
+.notice-content-wrap > .notice-content h3 {
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+/*리스트*/
+.notice-content-wrap > .notice-content:nth-child(1){
+    border-top: 10px solid var(--color-blue);
+}
+.notice-content-wrap > .notice-content:nth-child(2){
+    border-top: 10px solid var(--color-red);
+}
+.notice-content-wrap > .notice-content > .notice-list a {
+    display: block;
+    padding-top: 20px;
+}
+
+/*전체보기 버튼*/
+.notice-content > a {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-gray);
+    padding: 5px 13px;
+    /* width: 115px;
+    height: 30px; */
+    border-radius: 20px;
+    top: 45px;
+    right: 40px;
+    
+}
+.notice-content > a > span {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.notice-content > a > span:nth-child(2) {
+    margin-left: 5px;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+}
+/*03 academy-intro*/
+.academy-intro {
+    background-color: black;
+    padding: 130px 0;
+    color: white;
+}
+.intro-container {
+    width: 1170px;
+    margin: auto;
+    text-align: center;
+}
+.intro-container h1 {
+    margin: auto;
+    margin-bottom: 50px;
+    border: 2px solid white;
+    width: 270px;
+    height: 80px;
+    line-height: 80px;
+}
+.intro-container h1 span {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-red); 
+}
+.intro-container > p,
+.intro-container > p > strong {
+    font-size: 1.6rem;
+}
+.intro-container > p {
+    margin-bottom: 50px;
+}
+.intro-container > p > strong {
+    color: var(--color-yellow);
+}
+.intro-content-wrap {
+    display: flex;
+}
+.intro-content-wrap .intro-content {
+    margin-right: 30px; 
+    flex: 1;
+}
+.intro-content {
+    position: relative;
+    animation: intro-ani 1s linear both;
+}
+.intro-content:nth-child(2){
+    animation-delay: 0.3s;
+}
+.intro-content:nth-child(3){
+    animation-delay: 0.6s;
+}
+.intro-content:nth-child(4){
+    animation-delay: 0.9s;
+}
+.intro-content:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.3;
+
+}
+.intro-content:nth-child(1):before {
+    background-image: url('../images/intro01.jpg');
+}
+.intro-content:nth-child(2):before {
+    background-image: url('../images/intro02.jpg');
+}
+.intro-content:nth-child(3):before {
+    background-image: url('../images/intro03.jpg');
+}
+.intro-content:nth-child(4):before {
+    background-image: url('../images/intro04.jpg');
+}
+.intro-content > span {
+    display: block;
+    border: 2px solid var(--color-blue);
+    border-bottom: none;
+    padding: 13px 0;
+    position: relative;
+}
+.intro-content > div {
+    padding: 30px;
+    width: inherit;
+    height: 350px;
+    border: 2px solid var(--color-blue);
+    position: relative;
+}
+.intro-content > div > h3 {
+    margin-bottom: 30px;
+}
+
+.intro-content:nth-child(4) > div > h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.intro-content > div > h3 > span {
+    display: block;
+}
+.intro-content > div > p {
+    font-style: italic;
+    color: rgb(135, 195, 255);
+    font-size: 0.8rem;
+
+}
+
+
+@keyframes intro-ani {
+    0% {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

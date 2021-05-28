@@ -1,0 +1,60 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+    font-size: 22px;
+    font-weight: 300;
+}
+body {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+p, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 {
+    font-weight: 500;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.6rem;
+}
+h3 {
+    font-size: 1.3rem;
+}
+button{
+    background-color: transparent;
+    border: none;   
+}
+.hide {
+    line-height:0;
+    font-size:1px;
+    overflow:hidden;
+    }
+
+:root {
+    /*color*/
+    --color-main: rgb(66, 66, 66);
+    --color-blue: rgb(0, 82, 158);
+    --color-red: rgb(249, 22, 22);
+    --color-yellow: rgb(255, 255, 0);
+    --color-gray: rgb(213, 213, 213);
+    --color-lightgray: rgb(243, 243, 243);
+
+    /*animation*/
+    --animation-basic: 300ms;
+    --animation-fast: 150ms;
+    --animation-slow: 1s;
+
+    /*font-size*/
+}
