@@ -1,0 +1,15 @@
+footer {
+    padding: 50px 0;
+    background-color: black;
+
+    color: white;
+    text-align: center;
+}
+footer > .footer-notice {
+    margin-bottom: 30px;
+}
+footer > .footer-notice a,
+footer p {
+    color: white;
+    font-size: 0.8rem;
+}

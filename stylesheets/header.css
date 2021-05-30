@@ -59,7 +59,7 @@ nav > ul > li > a {
 nav > ul > li > ul > li > a {
     padding: 8px 0;
 }
-button{
+.menu-btn button{
     position: relative;
     top: 14px;
     border: 1px solid white;
