@@ -1,0 +1,171 @@
+/*01 main-visual*/
+.main-visual {
+    top: 195px;
+    height: 790px;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    z-index: 999999999;
+    border: 3px solid rebeccapurple;
+}
+/* .main-visual .main-visual-img {
+    width: 100vw;
+    position: relative;
+}
+.main-visual .main-visual-img img {
+    width: 100vw;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.main-visual:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+} */
+
+.main-visual .main-visual-container {
+    z-index: 2;
+    width: 1375px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+
+}
+/* .main-visual h2 {}
+.main-visual .main-visual-img {
+    width: 100vw;
+}
+.main-visual .main-visual-img img {
+    width: inherit;
+
+}
+.main-visual:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.main-visual .main-visual-container {
+    width: 1375px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+}
+
+.main-visual-container > p {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: white;
+    flex: 1;
+    margin-right: 90px;
+    line-height: 1.8em;
+}
+.main-visual-container > p > span {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    border-top: 2px solid white;
+    margin-top: 30px;
+    padding-top: 30px;
+    font-style: normal;
+    color: var(--color-yellow);
+} */
+
+/*수강료 조회*/
+.main-visual form {
+    width: 720px;
+    background-color: white;
+    padding: 30px;
+}
+.main-visual form .form-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.main-visual form .form-header img{
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+.main-visual form .form-main{
+    width: 100%;
+    height: 410px;
+    background-color: var(--color-lightgray);
+    border: 1px solid var(--color-gray);
+    padding: 30px;
+}
+.form-main > .form-text > div {
+    display: flex;
+    margin-bottom: 5px;
+}
+.form-main > .form-text > div > label,
+.form-main > .form-text > div > input[type=text] {
+    border: 1px solid var(--color-gray);
+    background-color: white;
+    padding: 18px 0
+}
+.form-main > .form-text  label {
+    font-weight: 700;
+    width: 140px;
+    text-align: center;
+}
+.form-main > .form-text > div > input[type=text] {
+    flex: 1;
+    padding-left: 20px;
+}
+.form-main button {
+    width: 210px;
+    height: 55px;
+    background-color: var(--color-red);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    float: right;
+}
+
+/*02 quick-menu*/
+.quick-menu {
+    position: relative;
+    padding: 130px 0;
+    background-color: green;
+    z-index: 1000000;
+}
+.quick-menu-container {
+    width: 1170px;
+    border: 1px solid red;
+    margin: auto;
+}
+.quick-menu-container a {
+    display: block;
+    width: 155px;
+    border: 1px solid red;
+}
+.quick-menu-container a div {
+    width: inherit;
+    height: 155px;
+    border-radius: 50%;
+    background-color: var(--color-lightgray);
+}
+.quick-menu-container a div img {
+
+}
+.quick-menu-container a p {
+
+}

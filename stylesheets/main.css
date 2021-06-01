@@ -1,3 +1,27 @@
+main {
+    margin-top: 195px;
+}
+
+.top-button {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.61);
+    opacity: 0;
+    position: fixed;
+    z-index: 999;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 50%;
+    transform: translateY(-40%);
+    transition: 0.3s;
+}
+.top-button.scroll {
+    opacity: 1;
+    transform: translateY(0%);
+    cursor: pointer;
+}
 /*01 main-visual*/
 .main-visual {
     height: 785px;
@@ -153,7 +177,6 @@ input[type=checkbox]:checked + label > em {
     border: none;
     cursor: pointer;
 }
-/*버튼이 float라서 수강료조회 form에만 해당*/
 .main-visual form .form-main input[type=submit],
 .reservation form .form-main > .form-btn{
     float: right;
@@ -180,6 +203,19 @@ input[type=submit]:hover, input[type=reset]:hover {
     display: block;
     width: 155px;
     transform: translateY(0);
+    animation: topToBottom-ani 0.5s linear both;
+}
+.quick-menu-container a:nth-child(2){
+    animation-delay: 0.2s;
+}
+.quick-menu-container a:nth-child(3){
+    animation-delay: 0.4s;
+}
+.quick-menu-container a:nth-child(4){
+    animation-delay: 0.6s;
+}
+.quick-menu-container a:nth-child(5){
+    animation-delay: 0.8s;
 }
 .quick-menu-container a div {
     width: inherit;
@@ -255,10 +291,7 @@ input[type=submit]:hover, input[type=reset]:hover {
     background-color: white;
     padding: 40px;
     position: relative;
-}
-.notice-content-wrap > .notice-content:nth-child(1) {
-    margin-right: 25px;
-    
+    animation: topToBottom-ani 0.5s linear both;
 }
 /*소제목*/
 .notice-content-wrap > .notice-content h3 {
@@ -268,9 +301,11 @@ input[type=submit]:hover, input[type=reset]:hover {
 /*리스트*/
 .notice-content-wrap > .notice-content:nth-child(1){
     border-top: 10px solid var(--color-blue);
+    margin-right: 25px;
 }
 .notice-content-wrap > .notice-content:nth-child(2){
     border-top: 10px solid var(--color-red);
+    animation-delay: 0.3s;
 }
 .notice-content-wrap > .notice-content > .notice-list a {
     display: block;
@@ -279,7 +314,6 @@ input[type=submit]:hover, input[type=reset]:hover {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-
 /*전체보기 버튼*/
 .notice-content > a {
     position: absolute;
@@ -364,7 +398,7 @@ input[type=submit]:hover, input[type=reset]:hover {
 }
 .intro-content {
     position: relative;
-    animation: intro-ani 1s linear both;
+    animation: topToBottom-ani 1s linear both;
 }
 .intro-content:nth-child(2){
     animation-delay: 0.3s;
@@ -478,12 +512,14 @@ input[type=submit]:hover, input[type=reset]:hover {
     position: relative;
     top: 55px;
     background-color: var(--color-red);
+    animation: leftToRight-ani 0.5s 0.5s linear both;
 }
 .training-content .training-text {
     position: absolute;
     background-color: var(--color-blue);
     top: 55px;
     right: 0;
+    animation: rightToLeft-ani 0.5s 0.5s linear both;
 }
 .jp-content .jp-text h2,
 .training-content .training-text h2 {
@@ -561,11 +597,13 @@ input[type=submit]:hover, input[type=reset]:hover {
     position: absolute;
     top: 0;
     right: 0;
+    animation: rightToLeft-ani 0.5s linear both;
 }
 .training-content .training-img {
     top: 0;
     left: 0;
-    position: relative
+    position: relative;
+    animation: leftToRight-ani 0.5s linear both;
 }
 .jp-content .jp-img img,
 .training-content .training-img img {
@@ -641,7 +679,7 @@ input[type=submit]:hover, input[type=reset]:hover {
     text-align: center;
 }
 
-@keyframes intro-ani {
+@keyframes topToBottom-ani {
     0% {
         opacity: 0;
         transform: translateY(-150px);
@@ -649,5 +687,27 @@ input[type=submit]:hover, input[type=reset]:hover {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes leftToRight-ani {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes rightToLeft-ani {
+    0% {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }

@@ -10,23 +10,29 @@
     <!--구글폰트-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <!--폰트어썸cdn-->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!--제이쿼리-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--slickslider-->
     <link rel="stylesheet" href="./stylesheets/common.css">
+    <script defer src="script/wow.min.js"></script>
     <script defer src="script/form.js"></script>
 </head>
 
 <body>
-    <!-- <a href="#none" class="skip">본문 바로가기</a> -->
+    <a href="#none" class="skip">본문 바로가기</a>
     <header>
         <div class="logo">
             <a href="index.html">
                 <img src="./images/logo.png" alt="sls영어학원 로고">
             </a>
         </div>
-        <div class="menu-wrap">
+        <div class="gnb">
             <nav>
                 <ul>
                     <li>
-                        <a href="#none">영어수업</a>
+                        <a class="main-menu" href="#none">영어수업</a>
                         <ul>
                             <li><a href="#none">왕기초영어</a></li>
                             <li><a href="#none">기초문법</a></li>
@@ -35,21 +41,21 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#none">토익 &middot; 토플</a>
+                        <a class="main-menu" href="#none">토익 &middot; 토플</a>
                         <ul>
                             <li><a href="#none">국민토익 이도환</a></li>
                             <li><a href="#none">백세형 토플 &middot; SAT</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#none">일본어수업</a>
+                        <a class="main-menu" href="#none">일본어수업</a>
                         <ul>
                             <li><a href="#none">일본어회화</a></li>
                             <li><a href="#none">영어회화</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#none">유학안내</a>
+                        <a class="main-menu" href="#none">유학안내</a>
                         <ul>
                             <li><a href="#none">미국유학</a></li>
                             <li><a href="#none">일본유학</a></li>
@@ -57,7 +63,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#none">학원안내</a>
+                        <a class="main-menu" href="#none">학원안내</a>
                         <ul>
                             <li><a href="#none">공지사항</a></li>
                             <li><a href="#none">오시는 길</a></li>
@@ -66,8 +72,8 @@
                         </ul>
                     </li>
                     <li class="menu-btn">
-                        <button>수강후기</button>
-                        <button>상담예약</button>
+                        <button class="review-btn">수강후기</button>
+                        <button class="reserv-btn">상담예약</button>
                     </li>
                 </ul>
             </nav>
@@ -75,6 +81,7 @@
         </div>
     </header>
     <main>
+        <button class="top-button"><i class="fas fa-arrow-up"></i></button>
         <section class="main-visual">
             <h2 class="hide">메인비주얼</h2>
             <div class="main-visual-img">
@@ -124,31 +131,31 @@
                 <h2 class="hide">quick menu</h2>
 
                 <div class="quick-menu-container">
-                    <a href="#none">
+                    <a href="#none" class="wow">
                         <div>
                             <img src="./images/quickmenu01.png" alt="유학안내 아이콘">
                         </div>
                         <p>유학안내</p>
                     </a>
-                    <a href="#none">
+                    <a href="#none" class="wow">
                         <div>
                             <img src="./images/quickmenu02.png" alt="수강후기 아이콘">
                         </div>
                         <p>수강후기</p>
                     </a>
-                    <a href="#none">
+                    <a href="#none" class="wow">
                         <div>
                             <img src="./images/quickmenu03.png" alt="상담예약 아이콘">
                         </div>
                         <p>상담예약</p>
                     </a>
-                    <a href="#none">
+                    <a href="#none" class="wow">
                         <div>
                             <img src="./images/quickmenu04.png" alt="오시는 길 아이콘">
                         </div>
                         <p>오시는 길</p>
                     </a>
-                    <a href="#none">
+                    <a href="#none" class="wow">
                         <div>
                             <img src="./images/quickmenu05.png" alt="대표전화 아이콘">
                         </div>
@@ -164,7 +171,7 @@
                     <h2>공지사항</h2>
                 </div>
                 <div class="notice-content-wrap">
-                    <div class="notice-content">
+                    <div class="notice-content wow">
                         <h3>영어수업</h3>
                         <div class="notice-list">
                             <a href="#none">· 21년 6월 영어 강의 시간표</a>
@@ -180,7 +187,7 @@
                             <span>+</span>
                         </a>
                     </div>
-                    <div class="notice-content">
+                    <div class="notice-content wow">
                         <h3>일본어수업</h3>
                         <div class="notice-list">
                             <a href="#none">· 6월 일본어강의 일정</a>
@@ -206,7 +213,7 @@
                     학원가에 센세이션을 일으키다
                 </p>
                 <div class="intro-content-wrap">
-                    <div class="intro-content">
+                    <div class="intro-content wow">
                         <span class="intro-title">해커스 파워토익</span>
                         <div>
                             <h3><span>이준호선생님의</span>토익
@@ -218,7 +225,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="intro-content">
+                    <div class="intro-content wow">
                         <span class="intro-title">왕기초 영어회화</span>
                         <div>
                             <h3><span>박은정선생님의
@@ -231,7 +238,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="intro-content">
+                    <div class="intro-content wow">
                         <span class="intro-title">초중급 고급회화</span>
                         <div>
                             <h3><span>남찬식선생님의</span>생활 회화
@@ -242,7 +249,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="intro-content">
+                    <div class="intro-content wow">
                         <span class="intro-title">말하기 영어시험</span>
                         <div>
                             <h3>오픽 / <br>
@@ -255,22 +262,22 @@
         <section class="academy-intro2">
             <article class="japanese">
                 <div class="jp-content">
-                    <div class="jp-text">
+                    <div class="jp-text wow">
                         <h2>일본어수업</h2>
                         <p>일본어 실력이 인생의 시야를 넓혀준다!
                             전략적인 말하기 위주 수업,
                             인터넷/CD룸 동영상 수업, 단어 게임</p>
                         <a href="#none" data-link="자세히보기"></a>
                     </div>
-                    <div class="jp-img"><img src="./images/japanese.jpg" alt="일본사진">
+                    <div class="jp-img wow"><img src="./images/japanese.jpg" alt="일본사진">
                     </div>
                 </div>
             </article>
             <article class="language-training">
                 <div class="training-content">
-                    <div class="training-img"><img src="./images/training.jpg" alt="유학사진">
+                    <div class="training-img wow"><img src="./images/training.jpg" alt="유학사진">
                     </div>
-                    <div class="training-text">
+                    <div class="training-text wow">
                         <h2>유학 안내</h2>
                         <p>일본, 미국, 영국, 호주, 캐나다, 뉴질랜드 등
                             전세계 수 많은 국가로 해마다 많은
