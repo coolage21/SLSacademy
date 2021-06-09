@@ -1,11 +1,12 @@
 * {
     font-family: 'Noto Sans KR', sans-serif;
     box-sizing: border-box;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 300;
 }
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
@@ -64,12 +65,16 @@ input:focus::placeholder {
     visibility: hidden;
 }
 
+input::placeholder {
+    font-size: 0.8rem;
+}
+
 :root {
     /*color*/
     --color-main: rgb(66, 66, 66);
     --color-blue: rgb(0, 82, 158);
     --color-red: rgb(249, 22, 22);
-    --color-yellow: rgb(255, 255, 0);
+    --color-yellow: rgb(201, 186, 120);
     --color-gray: rgb(213, 213, 213);
     --color-lightgray: rgb(243, 243, 243);
 

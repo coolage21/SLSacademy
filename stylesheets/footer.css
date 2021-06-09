@@ -1,9 +1,12 @@
 footer {
     padding: 50px 0;
     background-color: black;
-
     color: white;
     text-align: center;
+}
+footer > div {
+    width: 90vw;
+    margin: auto;
 }
 footer > .footer-notice {
     margin-bottom: 30px;
@@ -11,5 +14,8 @@ footer > .footer-notice {
 footer > .footer-notice a,
 footer p {
     color: white;
-    font-size: 0.8rem;
+    font-size: 0.8rem;w
+}
+footer > .footer-notice a:hover {
+    opacity: 0.8;
 }

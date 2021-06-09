@@ -10,39 +10,15 @@ window.addEventListener('scroll', function () {
         topBtn.classList.remove('scroll');
     }
 })
-//버튼 li 마우스 가져다대면
-// 상위부모 ul의 자식 ul에 opacity:0 그대로적용
-//그의 부모부모의 형제노드인 .sub-menu-back의 opacity:0
-
-// let menuBtn = document.querySelector('.menu-btn');
-
-// menuBtn.addEventListener('mouseover', function(){
-//     let subMenu = document.querySelector('nav > ul ul');
-//   subMenu.style.display='none';
-// }) 
-
-
-// let menu = document.querySelectorAll('.main-menu');
-// for (let i = 0; i < menu.length; i++) {
-//     let subMenu = document.querySelector('.nav > ul');
-//     let subMenuBack = document.querySelector('.sub-menu-back');
-//     menu[i].addEventListener('mousenover', function(e) {
-//         subMenu.classList.add('visible');
-//         subMenuBack.classList.add('visible');
-//     });
-//     menu[i].addEventListener('mouseout', function() {
-//         subMenu.classList.remove('visible');
-//         subMenuBack.classList.remove('visible');
-//     })
-// }
 
 /*수강후기, 상담예약 버튼*/
+let menuHeight = 145;
 let reviewBtn = document.querySelector('.review-btn');
 let reservBtn = document.querySelector('.reserv-btn');
 reviewBtn.addEventListener('click', function () {
     let location = document.querySelector('.review').offsetTop;
     window.scrollTo({
-        top: location - 175,
+        top: location - menuHeight,
         left: 0,
         behavior: 'smooth'
     })
@@ -50,11 +26,12 @@ reviewBtn.addEventListener('click', function () {
 reservBtn.addEventListener('click', function () {
     let location2 = document.querySelector('.reservation').offsetTop;
     window.scrollTo({
-        top: location2 - 175,
+        top: location2 - menuHeight,
         left: 0,
         behavior: 'smooth'
     })
 })
+
 /*top버튼*/
 topBtn.addEventListener('click', function () {
     window.scrollTo({
@@ -65,7 +42,6 @@ topBtn.addEventListener('click', function () {
 })
 
 /*수강료 조회하기 정규식*/
-
 function emptyChk(ele, title) {
     if (ele.value == '') {
         alert(`${title}을(를) 작성해주세요.`);
@@ -129,3 +105,33 @@ function reservationCheck() {
 
 /*wow.js*/
 new WOW().init();
+
+/*review-slickslider */
+$('.reviewslider').slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    centerMode: true,
+    responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            slidesToShow: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+});
+

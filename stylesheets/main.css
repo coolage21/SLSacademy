@@ -1,7 +1,7 @@
 main {
-    margin-top: 195px;
+    margin-top: 145px; /*header높이*/
 }
-
+/*top button*/
 .top-button {
     display: block;
     width: 50px;
@@ -22,21 +22,17 @@ main {
     transform: translateY(0%);
     cursor: pointer;
 }
+
 /*01 main-visual*/
 .main-visual {
     height: 785px;
-    width: 100vw;
+    width: 100%;
     position: relative;
     overflow: hidden;
-}
-.main-visual h2 {}
-.main-visual .main-visual-img {
-    width: 100vw;
-    
-}
-.main-visual .main-visual-img img {
-    width: inherit;
-
+    background-image: url(../images/main-visual.jpg);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .main-visual:before {
     content: '';
@@ -45,41 +41,69 @@ main {
     left: 0;
     width: inherit;
     height: inherit;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
 }
-
-.main-visual .main-visual-container {
-    width: 1375px;
+.main-visual-container {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
 }
-
-.main-visual-container > p {
-    font-size: 1.3rem;
-    font-style: italic;
+.main-visual-container > .main-visual-content {
     color: white;
-    flex: 1;
-    margin-right: 90px;
-    line-height: 1.8em;
+    margin-right: 180px;
 }
-.main-visual-container > p > span {
-    display: block;
-    font-size: 3rem;
+.main-visual-container > .main-visual-content > p:nth-child(1) {
+    font-size: 2.5rem;
     font-weight: 700;
-    border-top: 2px solid white;
-    margin-top: 30px;
-    padding-top: 30px;
-    font-style: normal;
-    color: var(--color-yellow);
+    line-height: 1.3em;
+    margin-bottom: 20px;
+}
+.main-visual-container > .main-visual-content > p:nth-child(1) > strong {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.main-visual-container > .main-visual-content > p:nth-child(2) {
+    font-style: italic;
+    margin-bottom: 50px;
+}
+.main-visual-container > .main-visual-content > p:nth-child(2) > span {
+   margin-bottom: 10px;
+   font-size: 0.8rem;
+}
+.main-visual-container > .main-visual-content > p:nth-child(2) > span {
+    display: block;
+}
+.main-visual-container > .main-visual-content > p:nth-child(2) > span  strong {
+    font-size: 1rem;
+    color: var(--color-yellow)
 }
 
+.main-visual-container > .main-visual-content > div {
+    /* position: absolute;
+    bottom: 0; */
+    /* display: inline-block; */
+    /* padding: 10px 25px; */
+}
+.main-visual-container > .main-visual-content > div img {
+    width: 37px;
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+}
+.main-visual-container > .main-visual-content > div span {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-gray);
+}
 /*수강료 조회 폼태그 및 상담예약 폼태그*/
 .main-visual form {
-    width: 720px;
+    width: 600px;
     background-color: white;
     padding: 30px;
 }
@@ -92,9 +116,9 @@ main {
 }
 .main-visual form .form-header img,
 .reservation form .form-header img{
-    width: 32px;
-    height: 32px;
-    margin-right: 13px;
+    width: 26px;
+    height: 26px;
+    margin-right: 9px;
 }
 .main-visual form .form-main,
 .reservation form .form-main {
@@ -151,8 +175,8 @@ main {
     position: relative;
     top: 2px;
     left: 2px;
-    width: 22px;
-    height: 20px;
+    width: 20px;
+    height: 18px;
     background-image: url(../images/checkbox-01.png);
     background-repeat: no-repeat;
     background-position: left center;
@@ -161,6 +185,7 @@ main {
 }
 .agreement > label {
     cursor: pointer;
+    font-size: 0.8rem;
 }
 input[type=checkbox]:checked + label > em {
     background-position: right center;
@@ -194,7 +219,7 @@ input[type=submit]:hover, input[type=reset]:hover {
     padding: 130px 0;
 }
 .quick-menu-container {
-    width: 1170px;
+    width: 1080px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -234,7 +259,7 @@ input[type=submit]:hover, input[type=reset]:hover {
     position: absolute;
     width: inherit;
     height: inherit;
-    background-color: rgb(255, 205, 202);
+    background-color: var(--color-yellow);
     bottom: -100%;
     left: 0;
     transition: 0.3s;
@@ -243,7 +268,7 @@ input[type=submit]:hover, input[type=reset]:hover {
     bottom: 0;
 }
 .quick-menu-container a div img {
-    width: 75px;
+    width: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -253,11 +278,12 @@ input[type=submit]:hover, input[type=reset]:hover {
 .quick-menu-container a p {
     margin-top: 15px;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 .quick-menu-container a:hover p {
     font-weight: 700;
+    color: var(--color-yellow);
 }
 
 /*03 notice*/
@@ -266,7 +292,7 @@ input[type=submit]:hover, input[type=reset]:hover {
     padding: 130px 0;
 }
 .notice-container {
-    width: 1170px;
+    width: 1080px;
     margin: auto;
 }
 .notice-container .notice-title {
@@ -276,8 +302,8 @@ input[type=submit]:hover, input[type=reset]:hover {
 }
 .notice-container .notice-title img{
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 33px;
+    height: 33px;
     margin-right: 10px;
 }
 .notice-container .notice-title h2 {
@@ -285,9 +311,11 @@ input[type=submit]:hover, input[type=reset]:hover {
 }
 .notice-content-wrap {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 .notice-content-wrap > .notice-content {
-    width: 570px;
+    width: 49%;
     background-color: white;
     padding: 40px;
     position: relative;
@@ -298,14 +326,19 @@ input[type=submit]:hover, input[type=reset]:hover {
     padding-bottom: 20px;
     border-bottom: 2px solid black;
 }
+.notice-content-wrap > .notice-content h3 img {
+    width: 30px;
+    margin-right: 10px;
+}
 /*리스트*/
 .notice-content-wrap > .notice-content:nth-child(1){
-    border-top: 10px solid var(--color-blue);
-    margin-right: 25px;
+    border-top: 10px solid var(--color-yellow);
+    /* margin-right: 25px; */
 }
 .notice-content-wrap > .notice-content:nth-child(2){
     border-top: 10px solid var(--color-red);
     animation-delay: 0.3s;
+    
 }
 .notice-content-wrap > .notice-content > .notice-list a {
     display: block;
@@ -320,10 +353,10 @@ input[type=submit]:hover, input[type=reset]:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid var(--color-gray);
-    padding: 5px 13px;
+    border: 1px solid var(--color-gray);
+    padding: 3px 13px;
     border-radius: 20px;
-    top: 45px;
+    top: 38px;
     right: 40px;
     overflow: hidden;
 }
@@ -362,16 +395,16 @@ input[type=submit]:hover, input[type=reset]:hover {
     color: white;
 }
 .intro-container {
-    width: 1170px;
+    width: 1080px;
     margin: auto;
     text-align: center;
 }
 .intro-container h1 {
     margin: auto;
     margin-bottom: 50px;
-    border: 2px solid white;
-    width: 270px;
-    height: 80px;
+    border: 2px solid var(--color-main);
+    padding: 0 20px;
+    display: inline-block;
     line-height: 80px;
 }
 .intro-container h1 span {
@@ -379,15 +412,15 @@ input[type=submit]:hover, input[type=reset]:hover {
     font-weight: 700;
     color: var(--color-red); 
 }
-.intro-container > p,
-.intro-container > p > strong {
+.intro-container > p {
+    margin-bottom: 100px;
     font-size: 1.6rem;
 }
-.intro-container > p {
-    margin-bottom: 50px;
-}
 .intro-container > p > strong {
+    font-size: 2rem;
+    font-weight: 500;
     color: var(--color-yellow);
+    text-transform: uppercase;
 }
 .intro-content-wrap {
     display: flex;
@@ -396,9 +429,13 @@ input[type=submit]:hover, input[type=reset]:hover {
     margin-right: 30px; 
     flex: 1;
 }
+.intro-content-wrap .intro-content:last-child {
+    margin-right: 0;
+}
 .intro-content {
     position: relative;
     animation: topToBottom-ani 1s linear both;
+    border: 2px solid var(--color-main);
 }
 .intro-content:nth-child(2){
     animation-delay: 0.3s;
@@ -436,48 +473,42 @@ input[type=submit]:hover, input[type=reset]:hover {
 }
 .intro-content > span {
     display: block;
-    border: 2px solid var(--color-blue);
-    border-bottom: none;
+    border-bottom: 2px solid var(--color-main);
     padding: 13px 0;
     position: relative;
 }
 .intro-content > div {
     padding: 30px;
     width: inherit;
-    height: 350px;
-    border: 2px solid var(--color-blue);
     position: relative;
 }
 .intro-content > div > h3 {
     margin-bottom: 30px;
 }
-.intro-content:nth-child(4) > div > h3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.intro-content:nth-child(4) > div h3 {
+    
 }
 .intro-content > div > h3 > span {
     display: block;
 }
 .intro-content > div > p {
     font-style: italic;
-    color: rgb(135, 195, 255);
+    color: var(--color-yellow);
     font-size: 0.8rem;
 }
 
 /*04 intro-japanese, language-training*/
 
+/*배경*/
 .academy-intro2 {
     padding: 130px;
-    background-image: url(../images/academy-intro2-back.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* filter: grayscale(1); */
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
     background-attachment: fixed;
+    position: relative;
 }
 .academy-intro2:before {
     content: '';
@@ -488,16 +519,44 @@ input[type=submit]:hover, input[type=reset]:hover {
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(../images/academy-intro2-back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+    opacity: 0.3;
+    
 }
+.academy-intro2:after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+/*content사이즈*/
 .japanese, .language-training {
     filter: grayscale(0);
     position: relative;
-    width: 1170px;
-    margin: auto;
+    width: 1080px;
 }
 .japanese {
     margin-bottom: 205px;
+}
+.japanese .jp-content,
+.language-training .training-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.japanese .jp-content {
+    height: 500px;
 }
 .jp-content .jp-text,
 .training-content .training-text {
@@ -507,24 +566,38 @@ input[type=submit]:hover, input[type=reset]:hover {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     padding: 50px;
     z-index: 2; 
-}   
-.jp-content .jp-text {
     position: relative;
-    top: 55px;
+}  
+.jp-content .jp-text:before,
+.training-content .training-text:before {
+    position: absolute;
+    width: 490px;
+    height: 380px;
+    border: 1px solid white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.jp-content .jp-text {
+    position: absolute;
     background-color: var(--color-red);
     animation: leftToRight-ani 0.5s 0.5s linear both;
 }
+
 .training-content .training-text {
     position: absolute;
-    background-color: var(--color-blue);
-    top: 55px;
+    background-color: var(--color-yellow);
     right: 0;
     animation: rightToLeft-ani 0.5s 0.5s linear both;
 }
 .jp-content .jp-text h2,
 .training-content .training-text h2 {
     margin-bottom: 25px;
-}
+} 
+
+/*버튼*/
 .jp-content .jp-text a,
 .training-content .training-text a {
     position: absolute;
@@ -558,14 +631,13 @@ input[type=submit]:hover, input[type=reset]:hover {
     color: var(--color-red);
 }
 .training-content .training-text a:before {
-    color: var(--color-blue);
+    color: var(--color-yellow);
 }
 
 .jp-content .jp-text a:hover:before,
 .training-content .training-text a:hover:before {
     top: -100%;
     left: 0;
-
 }
 .jp-content .jp-text a:after,
 .training-content .training-text a:after {
@@ -580,22 +652,23 @@ input[type=submit]:hover, input[type=reset]:hover {
     top: 0;
     left: 0;
 }
-
 .jp-content .jp-text a {
     color: var(--color-red);
 }
 .training-content .training-text a {
     color: var(--color-blue);
 }
+
+/*이미지*/
 .jp-content .jp-img,
 .training-content .training-img {
     width: 800px;
     height: 500px;
     overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .jp-content .jp-img {
     position: absolute;
-    top: 0;
     right: 0;
     animation: rightToLeft-ani 0.5s linear both;
 }
@@ -607,32 +680,130 @@ input[type=submit]:hover, input[type=reset]:hover {
 }
 .jp-content .jp-img img,
 .training-content .training-img img {
-    width: inherit;
+    width: 110%;
 }
+
 .training-content .training-img img {
     position: absolute;
     bottom: -90px;
-    left: -30px;
-}
+    left: 0;
+} 
 
 /*05 review*/
 .review {
     background-color: var(--color-gray);
     padding: 130px 0;
-    text-align: center;
 }
-.review p {
+
+.review > p {
+    text-align: center;
     font-size: 1.6rem;
     font-weight: 500;
     margin-bottom: 50px;
 }
-.reviewslider {
-    width: 1170px;
-    height: 450px;
+.reviewslider-wrap {
     margin: auto;
+    position: relative;
+    width: 1080px;
+    height: 450px;
     background-color: white;
-    border: 2px solid var(--color-blue);
+    border: 1px solid var(--color-blue);
+    box-shadow: 0 5px 5px rgba(94, 94, 94, .3);
 }
+.reviewslider {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.reviewslider .slide {
+    padding: 25px;
+    height: 420px;
+    background-color: var(--color-lightgray);
+    border: 1px solid var(--color-gray);
+    position: relative;
+    margin-right: 20px;
+    opacity: 0.3;
+}
+.slide.slick-center {
+    width: 40vw;
+    opacity: 1;
+}
+.reviewslider .slide em {
+    font-size: 0.8rem;
+    font-style: normal;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: var(--color-blue);
+    color: white;
+}
+.reviewslider .slide em.jp-review {
+    background-color: var(--color-red);
+}
+.reviewslider .slide h3 {
+    margin-bottom: 20px;
+}
+.reviewslider .slide p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    width: 100%;
+    display: -webkit-box;
+    word-wrap: break-word;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.reviewslider .slide > span,
+.reviewslider .slide a {
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 25px;
+}
+.reviewslider .slide > span {
+    left: 25px;
+}
+.reviewslider .slide a {
+    font-weight: 500;
+    right: 25px;
+}
+/*button*/
+.slick-arrow {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0;
+    background-color: white;
+    border: 1px solid var(--color-blue);
+    border-radius: 50%;
+    box-shadow: 0 5px 5px rgba(94, 94, 94, .3);
+    cursor: pointer;
+}
+.slick-prev {
+    left: -25px;
+}
+.slick-next {
+    right: -25px;
+}
+.slick-arrow::before {
+    display: block;
+    font-size: 20px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--color-blue);
+
+}
+.slick-prev::before {
+    content: "\f053";
+}
+.slick-next::before {
+    content: "\f054";
+}
+
 
 /*06 상담신청*/
 .reservation {
@@ -646,15 +817,41 @@ input[type=submit]:hover, input[type=reset]:hover {
     text-align: center;
 }
 .reservation > p {
+    position: relative;
     margin-bottom: 60px;
+    z-index: 1;
 }
+/* .reservation > p:before {
+    content: '';
+    display: block;
+    width: 310px;
+    height: 20px;
+    background-color: rgba(255, 0, 0, 0.301);
+    top: 89px;
+    left: 560px;
+    position: absolute;
+    z-index: -1;
+}
+.reservation > p:after {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 20px;
+    background-color: rgba(255, 0, 0, 0.301);
+    top: 140px;
+    left: 623px;
+    position: absolute;
+    z-index: -1;
+} */
 .reservation p span {
-    color: var(--color-red);
+    color: var(--color-yellow);
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 /*수강예약 폼태그*/
 .reservation form {
-    width: 1170px;
+    width: 1080px;
     margin: auto;
     background-color: white;
     margin-bottom: 25px;
@@ -679,6 +876,7 @@ input[type=submit]:hover, input[type=reset]:hover {
     text-align: center;
 }
 
+/*animation*/
 @keyframes topToBottom-ani {
     0% {
         opacity: 0;
@@ -710,4 +908,298 @@ input[type=submit]:hover, input[type=reset]:hover {
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+
+/*responsive*/
+@media (max-width: 1370px){
+    *{
+        font-size: 18px;
+    }
+    .main-visual-container,
+    .quick-menu-container,
+    .notice-container,
+    .intro-container,
+    .japanese, .language-training,
+    .reviewslider-wrap,
+    .reservation form {
+        width: 85vw;
+    }
+    /*main-visual*/
+    .main-visual-container > .main-visual-content {
+        margin-right: 60px;
+    }
+    .main-visual form {
+        width: 40vw;
+        background-color: white;
+        padding: 30px;
+    }
+    .main-visual form,
+    .reservation form {
+        padding: 20px;
+    }
+    .main-visual form .form-main,
+    .reservation form .form-main {
+        padding: 20px;
+    }
+    /*quick-menu*/
+    .quick-menu-container a {
+        width: 12vw;
+    }
+    .quick-menu-container a div {
+        height: 12vw;
+    }
+    /*button*/
+    .main-visual form .form-main input[type=submit],
+    .reservation form .form-main input[type=submit],
+    .reservation form .form-main input[type=reset],
+    .jp-content .jp-text a,
+    .training-content .training-text a {
+        width: 160px;
+        height: 45px;
+    }
+    .jp-content .jp-text a,
+    .training-content .training-text a {
+        line-height: 45px;
+    }
+    
+}
+
+@media (max-width: 1023px){
+    *{
+        font-size: 17px;
+    }
+    /*main-visual*/
+    .main-visual .main-visual-container {
+      flex-direction: column;
+    }
+    .main-visual-container > .main-visual-content {
+        margin-right: 0;
+    }
+    .main-visual-container > .main-visual-content > p:nth-child(1) > strong {
+        display: inline-block;
+    }
+    .main-visual-container > .main-visual-content > p:nth-child(2) > span {
+        display: inline-block;
+        margin-right: 15px;
+    }
+    .main-visual form {
+        width: 100%;
+       margin: left;
+    }
+    .main-visual-container > .main-visual-content > p:nth-child(2) {
+        margin-bottom: 10px;
+    }
+    .main-visual-content > div {
+        margin-bottom: 30px;
+    }
+    /*intro-content*/
+    .intro-content-wrap .intro-content {
+        margin-right: 20px; 
+        flex: 1;
+    }
+    .intro-content-wrap .intro-content > div {
+        padding: 20px;
+    }
+    /*japanese, training*/
+    .japanese .jp-content {
+        height: 40vh;
+    }
+    .jp-content .jp-text,
+    .training-content .training-text {
+        padding: 30px;
+        width: 40vw;
+        height: 40vh;
+    }
+    .jp-content .jp-text a,
+    .training-content .training-text a {
+        bottom: 30px;
+        right: 30px;
+    }
+    .jp-content .jp-img,
+    .training-content .training-img {
+        width: 60vw;
+        height: 45vh;
+    }
+    .jp-content .jp-img img {
+        position: absolute;
+        width: 120%;
+        right: 0;
+    }
+    /*review*/
+    .reviewslider .slide > span {
+        bottom: 45px;
+    }
+    .reviewslider .slide a {
+        left: 25px;
+    }
+    /*button*/
+    .main-visual form .form-main input[type=submit],
+    .reservation form .form-main input[type=submit],
+    .reservation form .form-main input[type=reset],
+    .jp-content .jp-text a,
+    .training-content .training-text a {
+        width: 150px;
+        height: 40px;
+    }
+    .jp-content .jp-text a,
+    .training-content .training-text a {
+        line-height: 40px;
+        bottom: 30px;
+        right: 30px;
+    }
+}
+
+@media (max-width: 768px){
+    *{
+        font-size: 15px;
+    }
+    /*main-visual*/
+    .main-visual .main-visual-container {
+        flex-direction: column;
+    }
+    /*notice*/
+    .notice-content-wrap {
+        flex-direction: column;
+    }
+    .notice-content-wrap > .notice-content {
+        width: 100%;
+    }
+    .notice-content-wrap > .notice-content:nth-child(1){
+        margin-bottom: 20px;
+    }
+    /*english*/
+    .intro-content-wrap {
+        flex-direction: column;
+    }
+    .intro-content-wrap .intro-content {
+        margin-right: 0px; 
+        margin-bottom: 40px;
+    }
+    .intro-content-wrap .intro-content:last-child {
+        margin-bottom: 0;
+    }
+    /*japanese, training*/
+    .jp-content .jp-img,
+    .training-content .training-img {
+        width: 100%;
+    }
+    .jp-content .jp-img img,
+    .training-content .training-img img {
+        left: 5px;
+    }
+    .jp-content .jp-text h2,
+    .training-content .training-text h2 {
+        margin-bottom: 17px;
+    } 
+    .jp-content .jp-text,
+    .training-content .training-text {
+        padding: 20px;
+    }
+    /*review*/
+    .reviewslider .slide {
+        padding: 20px;
+    }
+    .reviewslider .slide em,
+    .reviewslider .slide p,
+    .reviewslider .slide > span,
+    .reviewslider .slide a {
+        font-size: 1rem;
+    }
+    /*reservation*/
+    .reservation form {
+        padding: 30px;
+    }
+    .main-visual form .form-main > .form-text label,
+    .reservation form .form-main > .form-text label {
+        width: 100px;
+    }
+    /*button*/
+    .main-visual form .form-main input[type=submit],
+    .reservation form .form-main input[type=submit],
+    .reservation form .form-main input[type=reset],
+    .jp-content .jp-text a,
+    .training-content .training-text a {
+        width: 150px;
+        height: 40px;
+    }
+    .jp-content .jp-text a,
+    .training-content .training-text a {
+        line-height: 40px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 480px){
+    *{
+        font-size: 13px;
+    }
+    /*quick-menu*/
+    .quick-menu-container a p {
+        margin-top: 10px;
+    }
+    /*notice*/
+    .notice-content-wrap > .notice-content {
+        padding: 30px;
+    }
+    .notice-content > a { 
+        padding: 3px 10px;
+        top: 25px;
+    }
+    /*japanese, training*/
+    .jp-content .jp-text,
+    .training-content .training-text {
+        padding: 30px;
+        width: 60vw;
+        height: 30vh;
+        top: 170px;
+    }
+    /*reservation*/
+    .main-visual form .form-main > .form-text label,
+    .reservation form .form-main > .form-text label {
+        width: 70px;
+    }
+    .reservation form {
+        padding: 20px;
+    }
+    .main-visual form .form-main,
+    .reservation form .form-main {
+        padding: 20px;
+    } 
+    .main-visual form .form-main > .form-text > div > input[type=text],
+    .main-visual form .form-main > .form-text > div > input[type=tel],
+    .reservation form .form-main > .form-text > div > input[type=text],
+    .reservation form .form-main > .form-text > div > input[type=date],
+    .reservation form .form-main > .form-text > div > input[type=tel] {
+        flex: 1;
+        padding: 0 10px;
+    }
+    .reservation form .form-main .form-btn {      
+        float: none;
+        display: flex;
+    }
+    .reservation form .form-main input[type=submit],
+    .reservation form .form-main input[type=reset] {
+        flex: 1;
+        height: 40px;
+    }
+      /*button*/
+      .main-visual form .form-main input[type=submit],
+      .reservation form .form-main input[type=submit],
+      .reservation form .form-main input[type=reset],
+      .jp-content .jp-text a,
+      .training-content .training-text a {
+          width: 130px;
+          height: 36px;
+      }
+      .jp-content .jp-text a,
+      .training-content .training-text a {
+          line-height: 36px;
+      }
+}
+
+@media (max-width: 375px){
+
+
 }

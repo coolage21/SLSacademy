@@ -51,7 +51,7 @@
                         <a class="main-menu" href="#none">일본어수업</a>
                         <ul>
                             <li><a href="#none">일본어회화</a></li>
-                            <li><a href="#none">영어회화</a></li>
+                            <li><a href="#none">JLPT·JPT</a></li>
                         </ul>
                     </li>
                     <li>
@@ -71,32 +71,48 @@
                             <li><a href="#none">상담예약</a></li>
                         </ul>
                     </li>
-                    <li class="menu-btn">
-                        <button class="review-btn">수강후기</button>
-                        <button class="reserv-btn">상담예약</button>
-                    </li>
                 </ul>
             </nav>
             <div class="sub-menu-back"></div>
+        </div>
+        <div class="menu-btn">
+            <button class="review-btn">수강후기</button>
+            <button class="reserv-btn">상담예약</button>
         </div>
     </header>
     <main>
         <button class="top-button"><i class="fas fa-arrow-up"></i></button>
         <section class="main-visual">
             <h2 class="hide">메인비주얼</h2>
-            <div class="main-visual-img">
+            <!-- <div class="main-visual-img">
                 <img src="./images/main-visual.jpg" alt="영어학원 소개 배경">
-            </div>
+            </div> -->
             <div class="main-visual-container">
-                <p>
-                    1. 하루중 언제라도 원하는 시간에!<br>
-                    2. 이해가 안된다면 다시 반복수강<br>
-                    3. 바쁜달은 미루고 한가한 달에<br>
-                    4. 취업을 위한 면접시뮬레이션<br>
-                    5. 입시 진학 유학 정보제공 컨설팅<br>
-                    6. 원하시는 과목 과정변경 가능<br>
-                    <span>010-1234-1234</span>
-                </p>
+                <div class="main-visual-content">
+                    <p>
+                        1대1 맞춤교육으로
+                        <strong>외국어 정복의 기회</strong>
+                    </p>
+                    <p>
+                        <span>
+                            하루 중 언제라도 <strong>원하는 시간</strong>에 수업 가능
+                        </span>
+                        <span>
+                            이해가 안될 시 <strong>반복 수강</strong> 및 <strong>수업 연기</strong> 가능
+                        </span>
+                        <span>
+                            취업을 위한 <strong>면접 시뮬레이션</strong> 및 <strong>입시, 진학,</strong>
+                        </span>
+                        <span>
+                            <strong>유학 정보제공</strong>과 원하는 <strong>과목 과정 변경</strong> 가능
+                        </span>
+                    </p>
+                    <hr>
+                    <div>
+                        <img src="./images/tel.png" alt="telephone-icon">
+                        <span>010-1234-1234</span>
+                    </div>
+                </div>
                 <form id="frm" name="form" method="post" onsubmit="return checkAll()">
                     <div class="form-header">
                         <img src="./images/search.png" alt="조회하기 아이콘">
@@ -133,31 +149,31 @@
                 <div class="quick-menu-container">
                     <a href="#none" class="wow">
                         <div>
-                            <img src="./images/quickmenu01.png" alt="유학안내 아이콘">
+                            <img src="./images/quick01.png" alt="유학안내 아이콘">
                         </div>
                         <p>유학안내</p>
                     </a>
                     <a href="#none" class="wow">
                         <div>
-                            <img src="./images/quickmenu02.png" alt="수강후기 아이콘">
+                            <img src="./images/quick02.png" alt="수강후기 아이콘">
                         </div>
                         <p>수강후기</p>
                     </a>
                     <a href="#none" class="wow">
                         <div>
-                            <img src="./images/quickmenu03.png" alt="상담예약 아이콘">
+                            <img src="./images/quick03.png" alt="상담예약 아이콘">
                         </div>
                         <p>상담예약</p>
                     </a>
                     <a href="#none" class="wow">
                         <div>
-                            <img src="./images/quickmenu04.png" alt="오시는 길 아이콘">
+                            <img src="./images/quick04.png" alt="오시는 길 아이콘">
                         </div>
                         <p>오시는 길</p>
                     </a>
                     <a href="#none" class="wow">
                         <div>
-                            <img src="./images/quickmenu05.png" alt="대표전화 아이콘">
+                            <img src="./images/quick05.png" alt="대표전화 아이콘">
                         </div>
                         <p>대표전화</p>
                     </a>
@@ -172,7 +188,7 @@
                 </div>
                 <div class="notice-content-wrap">
                     <div class="notice-content wow">
-                        <h3>영어수업</h3>
+                        <h3><img src="./images/english.png" alt="japanese icon">영어수업</h3>
                         <div class="notice-list">
                             <a href="#none">· 21년 6월 영어 강의 시간표</a>
                             <a href="#none">· 21년 5월 중학생, 고등학생 영어 문법 강의 일정</a>
@@ -188,11 +204,11 @@
                         </a>
                     </div>
                     <div class="notice-content wow">
-                        <h3>일본어수업</h3>
+                        <h3><img src="./images/japanese.png" alt="japanese icon">일본어수업</h3>
                         <div class="notice-list">
                             <a href="#none">· 6월 일본어강의 일정</a>
                             <a href="#none">· 21년 6월 일본어 강의시간표</a>
-                            <a href="#none">·21년 5월 SLS외국어학원 강의 일정</a>
+                            <a href="#none">· 21년 5월 SLS외국어학원 강의 일정</a>
                             <a href="#none">· 4월부터 일본명문대학 영어공인성적으로 준비해드립니다.</a>
                             <a href="#none">· 21년 4월부터 동경대학(도쿄대. 일본대학1순위)입시반 개설</a>
                             <a href="#none">· 21년 3월 SLS외국어학원 강의 일정</a>
@@ -208,8 +224,9 @@
         <section class="academy-intro">
             <div class="intro-container">
                 <h1><span>SLS</span>영어학원</h1>
-                <p>활화산처럼 터져나오는 영어<br>
+                <p>
                     <strong>try intensive program</strong><br>
+                    활화산처럼 터져나오는 영어<br>
                     학원가에 센세이션을 일으키다
                 </p>
                 <div class="intro-content-wrap">
@@ -264,7 +281,8 @@
                 <div class="jp-content">
                     <div class="jp-text wow">
                         <h2>일본어수업</h2>
-                        <p>일본어 실력이 인생의 시야를 넓혀준다!
+                        <p>
+                            일본어 실력이 인생의 시야를 넓혀준다!
                             전략적인 말하기 위주 수업,
                             인터넷/CD룸 동영상 수업, 단어 게임</p>
                         <a href="#none" data-link="자세히보기"></a>
@@ -290,17 +308,64 @@
         <section class="review">
             <h2 class="hide">수강후기</h2>
             <p>SLS영어학원을 먼저 경험한 수강생이 말합니다.</p>
-            <div class="reviewslider">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+            <div class="reviewslider-wrap">
+                <div class="reviewslider">
+                    <div class="slide">
+                        <em>토익/토플</em>
+                        <h3>토익파워특강 2개월 과정 후기</h3>
+                        <p>때 나는 하나에 강아지, 무엇인지 새겨지는 봅니다. 헤일 하나에 같이 이네들은 있습니다. 릴케 내일 노루, 있습니다. 밤이 사랑과 별빛이 하나에 무성할 버리었습니다.
+                            위에도 헤일 어머니 청춘이 풀이 이웃 헤는 까닭입니다. 별 위에도 밤을 봅니다. 새겨지는 별들을 별 이름을 못 하늘에는 어머니 다하지 있습니다. 새워 나는 언덕
+                            피어나듯이 보고, 하나에 무성할 멀리 듯합니다. 이름과, 아스라히 잠, 내 버리었습니다.</p>
+                        <span>abcd0103 ㅣ 21-03-11</span>
+                        <a href="#none">더보기</a>
+                    </div>
+                    <div class="slide">
+                        <em>기초영문법</em>
+                        <h3>기초영문법으로 영어 정복!</h3>
+                        <p>때 나는 하나에 강아지, 무엇인지 새겨지는 봅니다. 헤일 하나에 같이 이네들은 있습니다. 릴케 내일 노루, 있습니다. 밤이 사랑과 별빛이 하나에 무성할 버리었습니다.
+                            위에도 헤일 어머니 청춘이 풀이 이웃 헤는 까닭입니다. 별 위에도 밤을 봅니다. 새겨지는 별들을 별 이름을 못 하늘에는 어머니 다하지 있습니다. 새워 나는 언덕
+                            피어나듯이 보고, 하나에 무성할 멀리 듯합니다. 이름과, 아스라히 잠, 내 버리었습니다.</p>
+                        <span>abcd0103 ㅣ 21-03-11</span>
+                        <a href="#none">더보기</a>
+                    </div>
+                    <div class="slide">
+                        <em class="jp-review">일본어회화</em>
+                        <h3>일본 유학 준비중입니다.</h3>
+                        <p>때 나는 하나에 강아지, 무엇인지 새겨지는 봅니다. 헤일 하나에 같이 이네들은 있습니다. 릴케 내일 노루, 있습니다. 밤이 사랑과 별빛이 하나에 무성할 버리었습니다.
+                            위에도 헤일 어머니 청춘이 풀이 이웃 헤는 까닭입니다. 별 위에도 밤을 봅니다. 새겨지는 별들을 별 이름을 못 하늘에는 어머니 다하지 있습니다. 새워 나는 언덕
+                            피어나듯이 보고, 하나에 무성할 멀리 듯합니다. 이름과, 아스라히 잠, 내 버리었습니다.</p>
+                        <span>abcd0103 ㅣ 21-03-11</span>
+                        <a href="#none">더보기</a>
+                    </div>
+                    <div class="slide">
+                        <em>아이엘츠</em>
+                        <h3>아이엘츠 리스닝 수업</h3>
+                        <p>때 나는 하나에 강아지, 무엇인지 새겨지는 봅니다. 헤일 하나에 같이 이네들은 있습니다. 릴케 내일 노루, 있습니다. 밤이 사랑과 별빛이 하나에 무성할 버리었습니다.
+                            위에도 헤일 어머니 청춘이 풀이 이웃 헤는 까닭입니다. 별 위에도 밤을 봅니다. 새겨지는 별들을 별 이름을 못 하늘에는 어머니 다하지 있습니다. 새워 나는 언덕
+                            피어나듯이 보고, 하나에 무성할 멀리 듯합니다. 이름과, 아스라히 잠, 내 버리었습니다.</p>
+                        <span>abcd0103 ㅣ 21-03-11</span>
+                        <a href="#none">더보기</a>
+                    </div>
+                    <div class="slide">
+                        <em>왕기초영어</em>
+                        <h3>영어의 기초부터 탄탄히</h3>
+                        <p>때 나는 하나에 강아지, 무엇인지 새겨지는 봅니다. 헤일 하나에 같이 이네들은 있습니다. 릴케 내일 노루, 있습니다. 밤이 사랑과 별빛이 하나에 무성할 버리었습니다.
+                            위에도 헤일 어머니 청춘이 풀이 이웃 헤는 까닭입니다. 별 위에도 밤을 봅니다. 새겨지는 별들을 별 이름을 못 하늘에는 어머니 다하지 있습니다. 새워 나는 언덕
+                            피어나듯이 보고, 하나에 무성할 멀리 듯합니다. 이름과, 아스라히 잠, 내 버리었습니다.</p>
+                        <span>abcd0103 ㅣ 21-03-11</span>
+                        <a href="#none">더보기</a>
+                    </div>
+                    <div class="slide">
+                        <em class="jp-review">JLPT·JPT</em>
+                        <h3>자격증 뿐만 아니라 기초부터</h3>
+                        <p>때 나는 하나에 강아지, 무엇인지 새겨지는 봅니다. 헤일 하나에 같이 이네들은 있습니다. 릴케 내일 노루, 있습니다. 밤이 사랑과 별빛이 하나에 무성할 버리었습니다.
+                            위에도 헤일 어머니 청춘이 풀이 이웃 헤는 까닭입니다. 별 위에도 밤을 봅니다. 새겨지는 별들을 별 이름을 못 하늘에는 어머니 다하지 있습니다. 새워 나는 언덕
+                            피어나듯이 보고, 하나에 무성할 멀리 듯합니다. 이름과, 아스라히 잠, 내 버리었습니다.</p>
+                        <span>abcd0103 ㅣ 21-03-11</span>
+                        <a href="#none">더보기</a>
+                    </div>
+                </div>
             </div>
-
-            em / h3
-            p / p / a
         </section>
         <section class="reservation">
             <h2 class="hide">상담 예약</h2>
@@ -322,7 +387,8 @@
                         </div>
                         <div>
                             <label for="reservation-number">연락처</label>
-                            <input type="tel" id="reservation-name" name="number" placeholder="- 를 포함한 숫자 입력 ex)010-1111-1111">
+                            <input type="tel" id="reservation-name" name="number"
+                                placeholder="- 를 포함한 숫자 입력 ex)010-1111-1111">
                         </div>
                         <div>
                             <label for="reservation-subject">수강과목</label>
@@ -357,8 +423,10 @@
     </main>
     <footer>
         <div class="footer-notice">
-            <a href="#none">학원소개</a> ㅣ
-            <a href="#none"> 고객센터</a> ㅣ
+            <a href="#none">학원소개</a>
+            <span> ㅣ </span>
+            <a href="#none">고객센터</a>
+            <span> ㅣ </span>
             <a href="#none">개인보호정책</a>
         </div>
         <div>
