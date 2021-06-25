@@ -1200,6 +1200,13 @@ input[type=submit]:hover, input[type=reset]:hover {
 }
 
 @media (max-width: 375px){
-
-
+    .main-visual-container,
+    .quick-menu-container,
+    .notice-container,
+    .intro-container,
+    .japanese, .language-training,
+    .reviewslider-wrap,
+    .reservation form {
+        width: 92vw;
+    }
 }
